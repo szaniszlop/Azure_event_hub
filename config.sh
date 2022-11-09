@@ -1,0 +1,4 @@
+export AZ_RESOURCE_GROUP=eventhubs-workshop
+export AZ_EVENTHUBS_NAMESPACE_NAME=my-eventhubs-namespace
+export AZ_EVENTHUB_NAME=my-eventhub
+export AZ_LOCATION=northeurope
