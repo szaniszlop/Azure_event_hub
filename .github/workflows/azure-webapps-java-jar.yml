@@ -47,13 +47,13 @@ jobs:
           cache: 'maven'
 
       - name: Build with Maven
-        run: mvn clean install
+        run: cd ./azure-eventhubs-workshop && mvn clean install
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: '${{ github.workspace }}/azure-eventhubs-workshop/target/*.jar'
 
   deploy:
     permissions:
